@@ -15,7 +15,9 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: (){
         throw InternetException("no internet");
-      }),
+      }
+      ,child: Icon(Icons.add),
+      ),
       body: Center(
         child: CircularProgressIndicator(),
       ),
