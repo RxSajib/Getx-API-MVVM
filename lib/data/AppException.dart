@@ -15,3 +15,9 @@ class RequestTimeout extends AppException{
 class ServerException extends AppException{
   ServerException([String ? super.message]);
 }
+class InvalidUrlException extends AppException{
+  InvalidUrlException([String ? super.message]);
+}
+class FetchDtaException extends AppException{
+  FetchDtaException([String ? super.message]);
+}
