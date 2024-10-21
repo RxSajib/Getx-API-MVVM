@@ -19,6 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       getPages: AppRoutes.appRoutes,
+
     );
   }
 }
