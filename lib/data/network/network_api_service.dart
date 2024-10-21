@@ -41,4 +41,22 @@ class NetworkApiServices extends BaseApiService{
     }
   }
 
+  @override
+  Future postApi(var data, String url) async{
+    dynamic responseJson;
+
+    try{
+      var response = await http.post(Uri.parse(url),
+      body: jsonEncode(data),).timeout(const Duration(seconds: 10));
+
+      responseJson = getApiResponse(response);
+    }on SocketException{
+      throw InternetException("no network");
+    }on HttpException{
+      throw RequestTimeout("request timeout");
+    }
+
+    throw responseJson;
+  }
+
 }
