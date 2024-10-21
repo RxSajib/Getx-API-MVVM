@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../data/AppException.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,6 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: Center(
         child: CircularProgressIndicator(),
       ),
