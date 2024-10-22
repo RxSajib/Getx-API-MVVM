@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_mvvm/getx_loclization/languages.dart';
 import 'package:getx_mvvm/res/Routes.dart';
-import 'package:getx_mvvm/ui/SplashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +20,9 @@ class _MyAppState extends State<MyApp> {
     return GetMaterialApp(
       getPages: AppRoutes.appRoutes,
 
+      translations: Languages(),
+      locale: Locale('en', 'US'),
+      fallbackLocale: Locale('en', 'US'),
     );
   }
 }

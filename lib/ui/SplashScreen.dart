@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 
@@ -15,7 +16,9 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
 
       body: Center(
-        child: CircularProgressIndicator(),
+        child: Center(
+          child: Text('home'.tr),
+        ),
       ),
     );
   }
