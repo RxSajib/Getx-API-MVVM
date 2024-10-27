@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:getx_mvvm/getx_loclization/languages.dart';
 import 'package:getx_mvvm/res/Routes.dart';
 
+import 'component/InternetException.dart';
+
 void main() {
   runApp(const MyApp());
 }
